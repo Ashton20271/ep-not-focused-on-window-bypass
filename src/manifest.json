@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Education Perfect Not Focused On Window Bypass",
+  "version": "1.0",
+  "description": "Makes the Education Perfect window always appear open and on top bypassing the not focused on window popup and alerting teacher.",
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "storage"
+  ],
+    "icons": {
+    "48": "icon-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.educationperfect.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

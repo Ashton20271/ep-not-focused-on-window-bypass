@@ -7,7 +7,7 @@ Currently, the system tricks Education Perfect into believing you are always foc
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Ashton20271/ep-not-focused-on-window-bypass&type=Date)](https://www.star-history.com/#Ashton20271/ep-not-focused-on-window-bypass&Date)
 
-![Downloads](https://img.shields.io/github/downloads/Ashton20271/ep-not-focused-on-window-bypass/total.svg)
+[![Downloads](https://img.shields.io/github/downloads/Ashton20271/ep-not-focused-on-window-bypass/total.svg)](https://github.com/Ashton20271/ep-not-focused-on-window-bypass/releases/latest)
 ## install instructions
 [Click here to download the files.zip](https://github.com/Ashton20271/ep-not-focused-on-window-bypass/releases/latest)
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/db554fe2-cf9f-4d30-a656-a86ee2847714" />

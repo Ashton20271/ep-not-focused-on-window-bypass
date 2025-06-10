@@ -29,5 +29,5 @@ press on to enable
 
 
 
-Credit to https://github.com/Dumpster-Fire-Devs/Better-EP for some code
+Credit to https://github.com/Dumpster-Fire-Devs/Better-EP for insperation
 

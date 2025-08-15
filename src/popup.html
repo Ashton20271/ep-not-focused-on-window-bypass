@@ -1,30 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>EP Popup</title>
+    <meta charset="UTF-8">
+    <title>EP Control Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg-light: #ffffff;
+            --bg-dark: #1e1e1e;
+            --text-light: #000000;
+            --text-dark: #ffffff;
+            --accent: #4cafef;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background-color: var(--bg-dark); color: var(--text-dark); }
+        }
+        @media (prefers-color-scheme: light) {
+            body { background-color: var(--bg-light); color: var(--text-light); }
+        }
         body {
-            font-family: Arial, sans-serif;
-            width: 200px;
-            padding: 10px;
+            font-family: 'Inter', sans-serif;
+            padding: 16px;
+            width: 240px;
+        }
+        h3 {
+            margin-top: 0;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
         }
         button {
-            width: 100px;
-            height: 40px;
-            margin: 10px 0;
-            font-size: 16px;
+            flex: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: var(--accent);
+            color: #fff;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        button:hover {
+            background-color: #3b9ddc;
+            transform: translateY(-1px);
         }
         #status {
-            margin-top: 10px;
-            font-weight: bold;
+            margin-top: 12px;
+            font-size: 0.9em;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
     <h3>Extension Control</h3>
-    <button id="onButton">On</button>
-    <button id="offButton">Off</button>
-    <div id="status">Status: Unknown: Open Education Perfect to get Status.</div>
+    <div class="button-group">
+        <button id="onButton">On</button>
+        <button id="offButton">Off</button>
+    </div>
+    <div id="status">Status: Unknown</div>
     <script src="popup.js"></script>
 </body>
 </html>

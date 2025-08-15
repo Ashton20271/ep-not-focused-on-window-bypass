@@ -7,20 +7,26 @@ document.addEventListener('DOMContentLoaded', function() {
         sendMessageToContentScript({ action: 'turnOff' }, updateStatus);
     });
 
-    // Check the current status when the popup is opened
     sendMessageToContentScript({ action: 'getStatus' }, updateStatus);
 });
 
 function sendMessageToContentScript(message, callback) {
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-        chrome.tabs.sendMessage(tabs[0].id, message, callback);
+        if (tabs[0]) {
+            chrome.tabs.sendMessage(tabs[0].id, message, callback);
+        }
     });
 }
 
 function updateStatus(response) {
+    const statusEl = document.getElementById('status');
     if (response && response.status) {
-        document.getElementById('status').textContent = `Status: ${response.status.charAt(0).toUpperCase() + response.status.slice(1)}`;
+        statusEl.textContent = `Status: ${capitalize(response.status)}`;
     } else {
-        document.getElementById('status').textContent = 'Status: Unknown';
+        statusEl.textContent = 'Status: Unknown';
     }
+}
+
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }

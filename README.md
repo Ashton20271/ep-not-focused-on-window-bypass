@@ -10,10 +10,12 @@ Currently, the system tricks Education Perfect into believing you are always foc
 https://chromewebstore.google.com/detail/jckdooghdfhkndjjjojhpepkiinhcdgp
 
 open extention
-![image](https://github.com/user-attachments/assets/290e6ae9-44c6-4bb4-a1bd-4ee701d11fc1)
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/2d960bc8-0872-4b73-9538-929d38f15d1d" />
+
 
 press on to enable
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/4cce008e-a981-48b9-b3ca-a307c3b81864" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/f4fa5200-9715-40f9-8845-0f60019f2b6f" />
+
 
 
 

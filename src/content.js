@@ -1,7 +1,4 @@
-// content.js
-// IF IT WORKS DONT TRY AND FIX IT
 function keepWindowActive() {
-  // Simulate focus and visibility events
   window.addEventListener('blur', () => {
       window.dispatchEvent(new Event('focus'));
   });
@@ -12,7 +9,6 @@ function keepWindowActive() {
       }
   });
 
-  // Override the document.hidden and document.visibilityState properties
   Object.defineProperty(document, 'hidden', {
       configurable: true,
       get: () => false
@@ -23,7 +19,6 @@ function keepWindowActive() {
       get: () => 'visible'
   });
 
-  // Ensure focus event is periodically dispatched
   setInterval(() => {
       window.dispatchEvent(new Event('focus'));
   }, 1000);
@@ -59,7 +54,6 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   }
 });
 
-// Run the function to keep the window active on load if needed
 if (isActive) {
   toggleWindowActive(true);
 }
